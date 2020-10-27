@@ -1,0 +1,21 @@
+.bgLoginSite {
+  background-color: #102d54;
+  width: 390px;
+  height: 550px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 209px;
+  margin-bottom: 96px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.btnLogin {
+  width: 80%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+

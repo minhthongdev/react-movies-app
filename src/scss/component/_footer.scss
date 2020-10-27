@@ -1,0 +1,314 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+footer{
+    background: #222;
+    .footer_info{
+        .main__footer{
+            margin:auto;
+            padding:$pd-3 0;
+            &_column{
+                h3{
+                    font-size: $fs-0;
+                    color: $color-white-0;
+                    font-weight: $fw-normal;
+                }
+                .chinhsach-hidden{
+                    visibility: hidden;
+                }
+                &_textlink{
+                    p{
+                        margin-bottom: $mg-0;
+                        a{
+                            text-decoration: none;
+                            color:$color-gray-2;
+                            transition: all 0.5s;
+                            font-size: $fs-0;
+                            &:hover{
+                                color:$color-white-0;    
+                            }
+                        }
+                    }
+                }
+                &_supvisor{
+                    .supvisor_01{
+                        display:flex;
+                        a{
+                            margin: 0 $mg-1 $mg-1 0;
+                            transition: all 0.5s;
+                            img{
+                                max-width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                            }
+                            &:hover img{
+                                opacity: 0.7;
+                            }
+                        }
+                        .circle-logo{
+                            background-color: white;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                &_app{
+                    a{
+                        margin: 0 $mg-1 $mg-1 0;
+                        img{
+                            max-width: 30px;
+                            height: auto;
+                        }
+                    }
+                }
+                &_social{
+                    a{
+                        margin: 0 $mg-1 $mg-1 0;
+                        img{
+                            max-width: 30px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+        hr{
+            background: $color-gray-4;
+            margin:auto;
+        }
+        .sub__footer{
+            padding: $pd-3 0;
+            margin:auto;
+            &_logo{
+                padding:0;
+                img{
+                    max-width: 100px;
+                    height: auto;
+                    border-radius: $border-radius;
+                }
+            }
+            &_text{
+                padding: 0;
+                h3{
+                    font-size: $fs-0;
+                    color: $color-white-0;
+                }
+                a{
+                    text-decoration: none;
+                    color:$color-red-0;
+                }
+                p{
+                    color:$color-gray-2;
+                    font-size: $fs-1;
+                    margin-bottom: 0;
+                }
+            }
+            &_certificate{
+                padding: 0;
+                a{
+                    img{
+                        max-width: 100px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+//Responsive
+
+
+
+
+@media only screen and (min-width:0px){
+    footer{
+        .footer_info{
+            .main__footer{
+                display: block;
+                #doitac{
+                    display: none;
+                }
+                #about_tix{
+                    display: none;
+                }
+                #policy_tix{
+                    display: flex;
+                    justify-content: center;
+                    h3{
+                        display:none;
+                    }
+                    .main__footer_column_textlink{
+                        display:flex;
+                        p{
+                            margin-right: $mg-1;
+                        }
+                    }
+                }
+                #app_tix{
+                    display: none;
+                }
+                #social_tix{
+                    text-align: center;
+                    h3{
+                        display: none;
+                    }
+                }
+            }
+            .sub__footer{
+                display:block;
+                &_text{
+                    text-align: center;
+                    padding: 15px 0;
+                    margin:auto;
+                }
+                &_logo{
+                    margin:auto;
+                }
+                &_certificate{
+                    margin:auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:576px){
+    // footer{
+    //     .footer_info{
+    //         .main__footer{
+    //             #doitac{
+    //                 display:none;
+    //             }
+    //             #about_tix{
+    //                 display:none;
+    //             }
+    //             #policy_tix{
+    //                 display:flex;
+    //             }   
+    //         }
+    //     }
+    // }
+}
+@media only screen and (min-width:768px){
+    footer{
+        .footer_info{
+            .main__footer{
+                display: flex;
+                #doitac{
+                    display: none;
+                }
+                #about_tix{
+                    display: none;
+                }
+                #policy_tix{
+                    display: flex;
+                    h3{
+                        display:none;
+                    }
+                    .main__footer_column_textlink{
+                        display:block;
+                        p{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                #app_tix{
+                    display: none;
+                }
+                #social_tix{
+                    h3{
+                        display: none;
+                    }
+                }
+            }
+            .sub__footer{
+                display:flex;
+                &_text{
+                    text-align: center;
+                    padding:0;
+                    margin:0;
+                }
+                &_logo{
+                    margin:0;
+                }
+                &_certificate{
+                    margin:0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:891px){
+    footer{
+        .footer_info{
+            .main__footer{
+                display: flex;
+                #doitac{
+                    display: none;
+                }
+                #about_tix{
+                    display: none;
+                }
+                #policy_tix{
+                    display: flex;
+                    h3{
+                        display:none;
+                    }
+                    .main__footer_column_textlink{
+                        display:flex;
+                        p{
+                            margin-right: $mg-2;
+                        }
+                    }
+                }
+                #app_tix{
+                    display: none;
+                }
+                #social_tix{
+                    h3{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    footer{
+        .footer_info{
+            .main__footer{
+                display: flex;
+                #doitac{
+                    display: block;
+                }
+                #about_tix{
+                    display: block;
+                }
+                #policy_tix{
+                    display: block;
+                    .main__footer_column_textlink{
+                        display:block;
+                        p{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                #app_tix{
+                    display: block;
+                }
+            }
+            .sub__footer{
+                &_text{
+                    text-align: left;
+                }
+        }
+     }
+    }
+}
+@media only screen and (min-width:1200px){
+
+}
+
